@@ -85,7 +85,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-        fun mandar_lista(lista_alunos : ArrayList<Alumno>){
+        fun mandar_lista(lista_alumnos : ArrayList<Alumno>){
             val intent : Intent = Intent(applicationContext, Listar::class.java)
             intent.putParcelableArrayListExtra("lista_alumnos",lista_alumnos as java.util.ArrayList<out Parcelable>)
             startActivity(intent)
